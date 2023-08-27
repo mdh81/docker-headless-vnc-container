@@ -10,9 +10,6 @@ docker run -it -p 6901:6901 -p 5901:5901 consol/<image>:<tag> <option>
 
 IMAGES:
 consol/debian-xfce-vnc
-consol/rocky-xfce-vnc
-consol/debian-icewm-vnc
-consol/rocky-icewm-vnc
 
 TAGS:
 latest  stable version of branch 'master'
@@ -55,10 +52,6 @@ cleanup () {
     exit 0
 }
 trap cleanup SIGINT SIGTERM
-
-## write correct window size to chrome properties
-$STARTUPDIR/chrome-init.sh
-source $HOME/.chromium-browser.init
 
 ## resolve_vnc_connection
 VNC_IP=$(hostname -i)

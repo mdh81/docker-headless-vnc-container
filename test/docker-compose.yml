@@ -7,5 +7,5 @@ services:
       context: ".."
       dockerfile: "Dockerfile"
     ports:
-      - 127.0.99.13:5902:5901
-      - 127.0.99.13:6902:6901
+      - 5902:5901
+      - 6902:6901
