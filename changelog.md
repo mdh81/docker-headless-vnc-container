@@ -1,5 +1,9 @@
 ## Changelog of the Docker headless VNC images
 
+### Forked by mdh81:
+* Retain debian + xfce and remove other flavors  
+* Add dependencies for OpenGL development
+
 ### Version 2.0.2:
 * fix not exposing VNC port ([#165](https://github.com/ConSol/docker-headless-vnc-container/issues/165)))
 

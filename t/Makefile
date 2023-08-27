@@ -7,7 +7,7 @@ help:
 
 update:
 	docker-compose pull
-	for IMG in $$(grep FROM Dockerfile.* | awk '{ print $$2 }' | sort -u); do docker pull $$IMG; done
+	for IMG in $$(grep FROM Dockerfile | awk '{ print $$2 }' | sort -u); do docker pull $$IMG; done
 
 clean:
 	docker-compose kill
